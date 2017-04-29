@@ -1,0 +1,35 @@
+body{
+    background-color: #002b36;
+    color: #ffffff;
+}
+
+#canvas {
+    width:75%;
+    height:75%;
+    border:1px solid black;
+    display:block;
+    margin:20px auto;
+}
+
+.mrgnTop{
+    margin-top: 50px;
+}
+
+.mrgnBtn{
+    margin-bottom:0px;
+}
+
+.blogSrc{
+    margin: 5px;
+}
+span{
+    font-size:10px;
+}
+
+.navPadd{
+    padding:5px;
+}
+
+.mrgnTp3{
+    margin-top:4.5px;
+}
