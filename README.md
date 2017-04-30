@@ -7,7 +7,7 @@ How to write code to handle black and white photos or images with no apples and 
 
 This repository contains the source code for  "k-nearest-neighbor" Alogorithm in javascript as well as in C++. I have learned this algorithm from the [blog](http://burakkanber.com/blog/machine-learning-in-js-k-nearest-neighbor-part-1/)  and also hosted its javascript [version](https://mlalgorithm.herokuapp.com/).
 Using the same logic I have created my own C++ version of "k-nearest-neighbor" Alogorithm.
-Consider a table for understanding about this alogithm :
+Consider a table for understanding about this algorithm :
 
 | Rooms| Area | Type      |
 | -----|:----:| ---------:|
