@@ -1,15 +1,16 @@
-/* 
-*      "k-nearest-neighbor" Alogorithm using c++. 
+/*
+*       Created by : Jaspreet Singh Kalsi.
 *
+*       "k-nearest-neighbor" Alogorithm using c++.
 *       
-*       For the Implementation, I have taken four arrays that are : 
-*       1) numOfRooms      (type:Integar) Contains the number of the Rooms and is of length 23.
-*       2) areaOfRooms     (type:Integar) Contains the area   of the Rooms and is of length 23.  
+*       For the Implementation, I have taken four arrays :
+*       1) numOfRooms      (type:Integer) Contains the number of the Rooms and is of length 23.
+*       2) areaOfRooms     (type:Integer) Contains the area   of the Rooms and is of length 23.
 * 		3) typeOfRoom      (type:String)  Contains the type information i.e(House,Flat & Apartment) and is of length 23.
-*       4) distanceRecords (type:Integar) Contains the minimum distance of each point from the Mystery point and is of length 23.
-*       
+*       4) distanceRecords (type:Integer) Contains the minimum distance of each point from the Mystery point and is of length 23.
+*
 *       I am assuming  (numOfRooms,typeOfRoom) as a coordinates of a point.And this way we have 23 points.
-*       Then, I am creating a new random Point(Mystry Point) and calculating using the "k-nearest-neighbor" Alogorithm wheather 
+*       Then, I am creating a new random Point(Mystery Point) and calculating using the "k-nearest-neighbor" Alogorithm wheather
 *		that point will be of type House,Flat or Apartment.
 */
 
@@ -23,7 +24,6 @@
 using namespace std;
 
 /*  Functions declaration  */
-void gotoxy(short , short); 
 int  shortestRoute(int,int,int,int);
 int  mysteryObjGeneration(int);
 int  sortDistAscendingOrder(int [],string []);
@@ -33,7 +33,7 @@ int main()
 {
 	int    numOfRooms[23]  = {1,2,3,4,4,4,5,7,7,7,8,9,8,10,9,1,3,2,1,2,1,2,1};
 	int    areaOfRooms[23] = {350,300,300, 250,500,400, 450,850,900, 1200,1500,1300, 1240,1700,1000, 800,900,700, 900,1150,1000,1200,1300};
-    string typeOfRoom[23] = {"apartment","apartment","apartment","apartment","apartment","apartment","apartment","house","house","house","house","house","house","house","house","flat","flat","flat","flat","flat","flat","flat","flat"};
+    string typeOfRoom[23]  = {"apartment","apartment","apartment","apartment","apartment","apartment","apartment","house","house","house","house","house","house","house","house","flat","flat","flat","flat","flat","flat","flat","flat"};
 	int    distanceRecords[23]; 
 	
 	srand (time(NULL)); /* initialize random seed: */
@@ -132,24 +132,8 @@ int generateResult(string typeOfRoom[]){
 	*/
 	(numOfFlats > numOfApartment && numOfFlats > numOfHouse)? result = "Flat":(numOfApartment > numOfHouse)? result = "Apartment":result = "House";
 	
-	cout<<"\nThe Mystry Point : "<<result;  /* Contains the final result */
+	cout<<"\n\tThe Mystery Point : "<<result;  /* Contains the final result */
 }
-
-
-/**
- * Moves the Cursor from one point to another.
- * @param  {Short} x.
- * @param  {Short} y.
- */
-void gotoxy(short x, short y){
-  COORD pos ={x,y};
-  SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
-}
-
-
-
-
-
 
 
 
