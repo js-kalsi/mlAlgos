@@ -40,6 +40,7 @@ We're going to plot the above as points on a graph in two dimensions, using numb
 When we inevitably run into a new, unlabeled data point ("mystery point"), we'll put that on the graph too. Then we'll pick a number (called "k") and just find the "k" closest points on the graph to our mystery point. If the majority of the points close to the new point are "flats", then we'll guess that our mystery point is a flat.
 
 That's what k-nearest-neighbor means. "If the 3 (or 5 or 10, or 'k') nearest neighbors to the mystery point are two apartments and one house, then the mystery point is an apartment."
+
 [source](http://burakkanber.com/blog/machine-learning-in-js-k-nearest-neighbor-part-1/)
 
 For the Implementation of C++ version, I have taken four arrays :
