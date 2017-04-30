@@ -2,6 +2,7 @@
  * Expected keys in object:
  * rooms, area, type
  */
+
 var Node = function(object) {
     for (var key in object)
     {
@@ -103,7 +104,15 @@ NodeList.prototype.determineUnknown = function() {
 
             /* Guess type */
             console.log(this.nodes[i].guessType(this.k));
+            var result = this.nodes[i].guessType(this.k);
+            var noOfFlat= result.flat || 0 ;
+            var noOfHouse = result.house || 0;
+            var noOfApartment = result.apartment || 0;
+            var finalOutput;
+            (noOfFlat > noOfHouse && noOfFlat > noOfApartment)? finalOutput = "flat" :(noOfHouse > noOfApartment )? finalOutput = "house":finalOutput = "apartment"
 
+            console.log("finalOutput :>>",finalOutput);
+            document.getElementById("mysterytType").innerHTML = finalOutput;
         }
     }
 };
