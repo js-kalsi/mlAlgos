@@ -1,3 +1,9 @@
+"""
+*
+*    # Implementation of "Framework for malware analysis in Android" research paper by Christian & Andres.
+*    # This file contains the static values.
+*
+"""
 CONST = {}
 CONST['TEST_FILE'] = 'test.csv'
 CONST['TRAINING_FILE'] = 'train.csv'

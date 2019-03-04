@@ -1,6 +1,5 @@
 """
 *
-*    # Coded by `AAJ2018 Team`.
 *    # Implementation of "Framework for malware analysis in Android" research paper by Christian & Andres.
 *    # Helper Class: Contains the Tools.
 *
