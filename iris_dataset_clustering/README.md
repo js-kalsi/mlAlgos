@@ -1,0 +1,1 @@
+ Mixture models are popular statistical approaches for image segmentation. However, mixture models faces some difficulties like  the estimation of the number of clusters (M). In this project, the clustering of Iris dataset is performed using  Inverted Dirichlet (ID) and Generalized Inverted Dirichlet (GID) mixture model.
