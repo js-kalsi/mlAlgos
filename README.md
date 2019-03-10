@@ -9,13 +9,14 @@ How to write code to handle black and white photos or images with no apples and 
 This repository contains the source code of following projects:
 
 | S. No. | Project | Language used | Folder         |
-|:------:|:-------:| :------------:|| :------------:|
+| :---    | :---    |  :---    |  :---    |
 | a      | Implementation of K-nearest-neighbor Algorithm     |  Javascript, C++ | `k_means_clustering`|
 | b      | Iris Dataset Clustering(iris_dataset_clustering) using Inverted Dirichlet and Generalized Inverted Dirichlet.    |  Python | `iris_dataset_clustering` |
 | c      | Android Malware Detection Detection     | Python | `virus_detector` |
 
 
 a) Implementation of K-nearest-neighbor Algorithm in javascript as well as in C++.
+
 b) Iris Dataset Clustering(iris_dataset_clustering) using Inverted Dirichlet(ID) and Generalized Inverted Dirichlet(GID) Finite Mixture Models(FMM).
 The `iris_dataset_clustering` folder contains the source code for ID and GID FMM. Both ID and GID  are very flexible mixture model(MM) as compare to Gaussian Mixture Model (GMM). In this, we have used IDMM and GIDMM for the clustering of Iris dataset.
 
