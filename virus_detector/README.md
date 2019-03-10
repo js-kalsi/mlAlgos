@@ -9,17 +9,12 @@ Src:  [blog](https://www.quora.com/How-many-people-use-Android-devices-in-the-wo
 
 The android play store (which is a heart of all the android apps) consists of millions of apps. Unfortunately, there are lots of apps on play-store which have malware in it. In this project, we have proposed a AMD which uses supervised machine learning(specifically Decision tree, K-nearest neighbor and Support vector machine) approach in order to detect wheather an app is malware oriented or not. The dataset consists of permission which an app needs from ANDROID_MANIFEST.xml file. This dataset id futher divided into training and test dataset.
 
-The results are as follows: 
+| Algorithm | Precision | Recall |F1-score |
+| :---         |     :---:      |          ---: |          ---: |
+| KNN   | 94%     | 94%    |94%    |94%    |
+| DT     | 93%      | 93%     | 93% | 93%|
+| SVM     | 93%      | 93%     | 93% | 93%|
 
-|------------------------------------------------------|
-| Algorithm | Precision | Recall | F1-score | Accuracy |
-|:---------:|----------:|:------:|:--------:|---------:|
-|   KNN     |    94%    |   94%  |   94%    |   94%    |
-|    DT     |    93%    |   93%  |   93%    |   93%    |
-|   SVM     |    93%    |   93%  |   93%    |   93%    |
-|------------------------------------------------------|
 
-where KNN: K-Nearest Neighbor,
-      DT: Decision Tree,
-      SVM: Support Vector Machine.
+
       
